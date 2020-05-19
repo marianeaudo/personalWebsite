@@ -1,0 +1,10 @@
+<mat-card class="card">
+  <mat-card-title class="title">
+    {{ skill.name }}
+  </mat-card-title>
+  <img class="logo" [src]="skill.image">
+  <mat-card-content class="content">
+    <span *ngIf="skill.content">{{ skill.content }}</span>
+    <mat-progress-bar mode="determinate" [value]="skill.level"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>

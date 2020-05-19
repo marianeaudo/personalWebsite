@@ -1,0 +1,33 @@
+.home {
+  display: table;
+  text-align: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.global {
+  display: table-cell;
+  vertical-align: middle;
+  grid-template-columns: 50% 50%;
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  padding-bottom: 60px;
+}
+
+h2 {
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}

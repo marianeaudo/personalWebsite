@@ -1,0 +1,48 @@
+@media screen and (min-width: 500px) {
+  .card {
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .content {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.trainings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  align-items: center;
+  width: 100vw;
+}
+
+.title, .subtitle, .content {
+  text-align: center;
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+  padding-bottom: 10px;
+}

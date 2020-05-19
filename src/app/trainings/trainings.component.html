@@ -1,0 +1,17 @@
+<section class="trainings">
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <div *ngFor="let training of trainings">
+    <mat-card class="card">
+      <mat-card-title *ngIf="!isLoading" class="title">
+        {{ training.name }}
+      </mat-card-title>
+      <mat-card-subtitle *ngIf="!isLoading" class="subtitle">
+        {{ training.school }} - {{ training.beginningDate.seconds * 1000 | date: 'MMMM yyyy' | titlecase}} <span *ngIf="training.duration">-</span> {{ training.duration}} <span *ngIf="training.duration">mois</span>
+      </mat-card-subtitle>
+      <img *ngIf="!isLoading" class="logo" [src]="training.schoolImage">
+      <mat-card-content *ngIf="!isLoading" class="content">
+        {{ training.content }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

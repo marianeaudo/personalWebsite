@@ -1,0 +1,47 @@
+<div class="flex">
+  <section class="contact-form" *ngIf="!messageSent">
+    <mat-card class="card">
+      <mat-card-title class="title">
+        Envoyez-moi un message!
+      </mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit(); contactForm.reset()" fxLayout="column"
+          fxLayoutAlign="center center" fxLayoutGap="10px">
+          <mat-form-field appearance="fill">
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder="Nom" name="lastname" formControlName="lastname" class="form-control">
+            <mat-error *ngIf="contactForm.get('lastname').errors?.required">Le champ est obligatoire.</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Prénom</mat-label>
+            <input matInput placeholder="Prénom" name="firstname" formControlName="firstname" class="form-control">
+            <mat-error *ngIf="contactForm.get('firstname').errors?.required">Le champ est obligatoire.</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Email" name="email" formControlName="email" class="form-control">
+            <mat-error *ngIf="contactForm.get('email').errors?.required">Le champ est obligatoire.</mat-error>
+            <mat-error *ngIf="contactForm.get('email').errors?.email">L'e-mail n'est pas valide.</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Numéro de téléphone</mat-label>
+            <input matInput placeholder="Numéro de téléphone" name="phonenumber" formControlName="phonenumber"
+              class="form-control">
+            <mat-error *ngIf="contactForm.get('phonenumber').errors?.required">Le champ est obligatoire.</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea class="textarea" rows="5" matInput placeholder="Votre message" name="message"
+              formControlName="message" class="form-control"></textarea>
+            <mat-error *ngIf="contactForm.get('message').errors?.required">Le champ est obligatoire.</mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid">Envoyer</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <p *ngIf="messageSent">Votre message a bien été envoyé!</p>
+  <p *ngIf="errorMessageSent">Une erreur est survenue, veuillez réessayer.</p>
+
+</div>

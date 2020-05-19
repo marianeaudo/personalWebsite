@@ -1,0 +1,22 @@
+<section class="exp">
+  <div *ngIf="!isLoading, else spinner" class="experiences">
+    <div *ngFor="let experience of experiences">
+      <mat-card class="card">
+        <mat-card-title class="title">
+          {{ experience.name }}
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+          {{ experience.company }} - {{ experience.beginningDate.seconds * 1000 | date: 'MMMM yyyy' | titlecase}} -
+          {{ experience.duration }} mois
+        </mat-card-subtitle>
+        <img class="logo" [src]="experience.logo">
+        <mat-card-content class="content">
+          {{ experience.content }}
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <ng-template #spinner>
+    <mat-spinner></mat-spinner>
+  </ng-template>
+</section>
