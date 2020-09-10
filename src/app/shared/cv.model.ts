@@ -26,3 +26,11 @@ export interface Experience {
   content: string;
   logo: string;
 }
+
+export interface Certification {
+  date: Timestamp;
+  name: string;
+  school: string;
+  source: string;
+  teacher: string;
+}

@@ -23,6 +23,7 @@ import { environment } from 'src/environments/environment';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillmatcardComponent } from './skills/skillmatcard/skillmatcard.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 registerLocaleData(localeFr, 'fr');
 
@@ -37,7 +38,8 @@ registerLocaleData(localeFr, 'fr');
     AboutComponent,
     SkillsComponent,
     SkillmatcardComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,7 @@ registerLocaleData(localeFr, 'fr');
     AngularFirestoreModule,
     ReactiveFormsModule,
     HttpClientModule
-  ],
+    ],
   providers: [
     {
       provide: LOCALE_ID, useValue: 'fr'
