@@ -42,7 +42,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 90vh;
   align-items: center;
+  width: 100vw;
 }
 
 .title, .subtitle, .content {

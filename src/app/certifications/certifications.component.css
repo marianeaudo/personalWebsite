@@ -2,6 +2,7 @@
 
   .card {
     width: 400px;
+    height: 200px;
     margin: 10px;
     text-align: center;
   }
@@ -42,7 +43,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 90vh;
   align-items: center;
+  width: 100vw;
 }
 
 .title, .subtitle, .content {
@@ -55,4 +58,6 @@
   padding-bottom: 10px;
 }
 
-
+.content:hover {
+  cursor: pointer;
+}

@@ -1,27 +1,24 @@
-<!--
+<section class="certif">
+  <div *ngIf="!isLoading, else spinner" class="certifications">
+    <div *ngFor="let certification of certifications">
 
-  <section class="certif">
-    <div *ngIf="!isLoading, else spinner" class="certifications">
-      <div *ngFor="let certification of certifications">
-        <mat-card class="card">
-          <mat-card-title class="title">
-            {{ certification.name }}
-          </mat-card-title>
-          <mat-card-subtitle class="subtitle">
-           {{ certification.date.seconds * 1000 | date: 'MMMM yyyy' | titlecase}}
-          </mat-card-subtitle>
-          <mat-card-content class="content">
-            <pdf-viewer [src]=certification.source
-              [render-text]="true"
-              style="display: block;"
-  ></pdf-viewer>
-
-          </mat-card-content>
-        </mat-card>
-      </div>
+      <mat-card class="card">
+        <mat-card-title class="title">
+          {{ certification.name }}
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+          {{ certification.date.seconds * 1000 | date: 'MMMM yyyy' | titlecase}}, {{ certification.school }}
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+          par {{ certification.teacher }}
+        </mat-card-subtitle>
+        <mat-card-content class="content" (click)="onOpenPdf(certification.source)">
+          <pdf-viewer [src]=certification.source  [render-text]="true" [original-size]="false" [autoresize]="true" style="display: block; max-width: 100px;"></pdf-viewer>
+        </mat-card-content>
+      </mat-card>
     </div>
-    <ng-template #spinner>
-      <mat-spinner></mat-spinner>
-    </ng-template>
-  </section>
--->
+  </div>
+  <ng-template #spinner>
+    <mat-spinner></mat-spinner>
+  </ng-template>
+</section>

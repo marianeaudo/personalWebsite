@@ -31,3 +31,13 @@ h3 {
   padding-top: 30px;
   padding-bottom: 60px;
 }
+
+.copyright {
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+
+.linkedin {
+  margin-right: 10px;
+}

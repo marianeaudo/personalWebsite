@@ -31,6 +31,10 @@ export class CertificationsComponent implements OnInit, OnDestroy {
     this.certificationsService.fetchCertifications();
   }
 
+  onOpenPdf(source: string): void {
+    window.open(source);
+  }
+
   ngOnDestroy(): void {
     this.certificationsSubscription.unsubscribe();
     this.isLoadingSubscription.unsubscribe();

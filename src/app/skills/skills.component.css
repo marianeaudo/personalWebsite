@@ -4,9 +4,18 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   flex-wrap: wrap;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  align-items: center;
+  width: 100vw;
 }
 
 .back-end, .front-end, .dvers {
@@ -25,4 +34,8 @@
   width: 50%;
   height: 50%;
   padding-bottom: 10px;
+}
+
+.categoryTitle {
+  font-size: 25px;
 }

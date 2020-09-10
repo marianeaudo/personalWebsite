@@ -2,6 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
+import {Router} from "@angular/router";
+
+import { UIService } from '../shared/ui.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +17,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   messageSent = false;
   errorMessageSent = false;
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient, private uiService: UIService, private router: Router) {}
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
@@ -38,9 +41,14 @@ export class ContactComponent implements OnInit, OnDestroy {
       .subscribe(
         () => {
           this.messageSent = true;
+          this.uiService.showSnackbar('Votre message a bien été envoyé.');
+          this.router.navigate(['']);
         },
         (error) => {
           this.errorMessageSent = true;
+          this.uiService.showSnackbar('Un problème est survenu lors de l\'envoi de votre message, veuillez réessayer.');
+          this.router.navigate(['/contact']);
+
         }
       );
   }
