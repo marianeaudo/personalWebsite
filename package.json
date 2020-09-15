@@ -5,9 +5,9 @@
     "config":
      "ts-node -O '{\"module\": \"commonjs\"}' ./config.index.ts",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run config && ng serve",
     "build": "ng build",
-    "build-prod": "ng build --prod",
+    "build-prod": "npm run config && ng build --prod",
     "test": "nyc ./node_modules/.bin/ava -v",
     "lint": "ng lint",
     "e2e": "ng e2e",
