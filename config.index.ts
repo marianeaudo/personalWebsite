@@ -6,7 +6,7 @@ const targetPath2 = './src/environments/environment.ts';
 const envConfigFile = `export const environment = {
    production: true,
    firebase: {
-        apiKey: '${process.env.FIREBASE_API_KEY},
+        apiKey: 'AIzaSyBVrxGibsmzorZ8_9M9CAGDnOBKn-JZXB0',
         authDomain: '${process.env.FIREBASE_AUTH_DOMAIN}',
         databaseURL: '${process.env.FIREBASE_DATABASE_URL}',
         projectId: '${process.env.FIREBASE_PROJECT_ID}',
