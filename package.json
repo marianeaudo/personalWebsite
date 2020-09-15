@@ -2,6 +2,8 @@
   "name": "personal-website",
   "version": "0.0.0",
   "scripts": {
+    "config":
+     "ts-node -O '{\"module\": \"commonjs\"}' ./config.index.ts",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
