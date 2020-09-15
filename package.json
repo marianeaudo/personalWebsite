@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
-    "build-prod": "npm run config.index.ts && ng build --prod",
+    "build-prod": "npm run config && ng build --prod",
     "test": "nyc ./node_modules/.bin/ava -v",
     "lint": "ng lint",
     "e2e": "ng e2e",
