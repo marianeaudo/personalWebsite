@@ -1,4 +1,5 @@
-import {writeFile} from 'fs';
+import { writeFile } from 'fs';
+import { name, version } from 'package.json';
 
 const targetPath = './src/environments/environment.prod.ts';
 const targetPath2 = './src/environments/environment.prod.ts';
@@ -14,8 +15,8 @@ const envConfigFile = `export const environment = {
         messagingSenderId: '${process.env.FIREBASE_MESSAGING_SENDER_ID}',
         appId: '${process.env.FIREBASE_APP_ID}'
     },
-    name: 'personal-website',
-    version: '0.0.0'
+    name: '${name}',
+    version: '${version}'
 };
 `;
 
