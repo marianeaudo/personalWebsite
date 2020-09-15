@@ -7,7 +7,7 @@ const envConfigFile = `export const environment = {
    production: true,
    firebase: {
         apiKey: 'AIzaSyBVrxGibsmzorZ8_9M9CAGDnOBKn-JZXB0',
-        authDomain: '${process.env.FIREBASE_AUTH_DOMAIN}',
+        authDomain: 'marianeaudo-website.firebaseapp.com',
         databaseURL: '${process.env.FIREBASE_DATABASE_URL}',
         projectId: '${process.env.FIREBASE_PROJECT_ID}',
         storageBucket: '${process.env.FIREBASE_STORAGE_BUCKET}',
