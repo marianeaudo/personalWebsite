@@ -4,7 +4,7 @@
   "scripts": {
     "config": "ts-node config.index.ts",
     "ng": "ng",
-    "start": "ng serve -o",
+    "start": "npm run config && ng serve -o",
     "build": "ng build",
     "build-prod": "npm run config && ng build --prod",
     "test": "nyc ./node_modules/.bin/ava -v",
