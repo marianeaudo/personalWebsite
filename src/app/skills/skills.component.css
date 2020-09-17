@@ -1,24 +1,24 @@
+@media screen and (min-width: 2000px) {
+  .skills {
+    height: 90vh;
+  }
+}
+
 .skillsglobal {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 90vh;
   text-align: center;
-  flex-wrap: wrap;
-}
+  }
 
 .skills {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 90vh;
-  align-items: center;
-  width: 100vw;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.back-end, .front-end, .dvers {
+.back-end, .front-end, .divers {
   padding-top: 10px;
 }
 
@@ -38,4 +38,9 @@
 
 .categoryTitle {
   font-size: 25px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
 }

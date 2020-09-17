@@ -25,6 +25,7 @@ mat-toolbar {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100vw;
 }
 
 .toggle:hover {

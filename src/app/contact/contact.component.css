@@ -1,43 +1,41 @@
-@media screen and (min-width: 700px) {
-
+@media screen and (min-width: 700px) and (max-width: 2000px) {
   mat-form-field {
     width: 600px;
   }
 
+  mat-card {
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-
   mat-form-field {
     width: 300px;
   }
 
+  mat-card {
+    width: 400px;
+  }
 }
 
-.contact {
+@media screen and (min-width: 2000px) {
+  mat-form-field {
+    width: 900px;
+  }
+
+  mat-card {
+    width: 1000px;
+  }
+}
+
+.contact-form {
+  height: 90vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-}
-
-.card {
-  margin: 10px;
 }
 
 .title {
   text-align: center;
   padding-bottom: 5px;
-}
-
-.content {
-  text-align: left;
-}
-
-.nav-caption {
-  padding-left: 5px;
-  display: inline-block;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
