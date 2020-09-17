@@ -10,7 +10,7 @@ const envConfigFile = `export const environment = {
    production: true,
    firebase: {
         apiKey: '${process.env.API_KEY}',
-        authDomain: '${process.env.FAUTH_DOMAIN}',
+        authDomain: '${process.env.AUTH_DOMAIN}',
         databaseURL: '${process.env.DATABASE_URL}',
         projectId: '${process.env.PROJECT_ID}',
         storageBucket: '${process.env.STORAGE_BUCKET}',
@@ -26,7 +26,7 @@ const envConfigFile2 = `export const environment = {
   production: false,
   firebase: {
        apiKey: '${process.env.API_KEY}',
-       authDomain: '${process.env.FAUTH_DOMAIN}',
+       authDomain: '${process.env.AUTH_DOMAIN}',
        databaseURL: '${process.env.DATABASE_URL}',
        projectId: '${process.env.PROJECT_ID}',
        storageBucket: '${process.env.STORAGE_BUCKET}',

@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   firebase: {
-       apiKey: 'AIzaSyBVrxGibsmzorZ8_9M9CAGDnOBKn-JZXB0',
+       apiKey: 'coucou',
        authDomain: 'undefined',
        databaseURL: 'https://marianeaudo-website.firebaseio.com',
        projectId: 'marianeaudo-website',

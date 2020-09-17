@@ -7,7 +7,6 @@
 .skillsglobal {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 90vh;
@@ -17,7 +16,6 @@
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .back-end, .front-end, .divers {
@@ -45,4 +43,11 @@
 .category {
   display: flex;
   flex-direction: column;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }

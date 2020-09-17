@@ -1,15 +1,16 @@
 <section class="skillsglobal">
-  <div *ngIf="!isLoading, else spinner" class="skills">
-  <div *ngFor="let category of skillCategories">
-    <div [ngClass]="category | lowercase">
-      <div class="categoryTitle" *ngIf="!isLoading">{{ category }}</div>
-      <div *ngFor="let skill of skills" [ngClass]="(category | lowercase) +'card'">
-        <app-skillmatcard *ngIf="skill.category == category" [skill]="skill"></app-skillmatcard>
+  <div *ngIf="!isLoading" class="skills">
+    <div *ngFor="let category of skillCategories">
+      <div [ngClass]="category | lowercase">
+        <div class="categoryTitle" *ngIf="!isLoading">{{ category }}</div>
+        <div *ngFor="let skill of skills" [ngClass]="(category | lowercase) +'card'">
+          <app-skillmatcard *ngIf="skill.category == category" [skill]="skill"></app-skillmatcard>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  <ng-template #spinner>
+  <div *ngIf="isLoading" class="spinner">
     <mat-spinner></mat-spinner>
-  </ng-template>
+  </div>
+
 </section>
