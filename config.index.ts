@@ -1,5 +1,4 @@
 import { writeFile } from 'fs';
-import { environment } from './src/environments/environment';
 
 // read environment variables from .env file
 require('dotenv').config();
