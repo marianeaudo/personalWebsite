@@ -1,5 +1,6 @@
 node_modules/
 src/environments/firebase.environment.ts
+src/environments/environment.ts
 .env
 
 ### Firebase ###
