@@ -1,7 +1,6 @@
 import { writeFile } from 'fs';
 import { environment } from './src/environments/environment';
 
-
 // read environment variables from .env file
 require('dotenv').config();
 
@@ -40,16 +39,11 @@ const envConfigFile = `export const environment = {
 // };
 // `;
 
-if (environment.production) {
-  writeFile(targetPath, envConfigFile, 'utf8', (err) => {
-    if (err) {
-      return console.log(err);
-    }
-  });
-}
-
-
-
+writeFile(targetPath, envConfigFile, 'utf8', (err) => {
+  if (err) {
+    return console.log(err);
+  }
+});
 
 // writeFile(targetPath2, envConfigFile2, 'utf8', (err) => {
 //   if (err) {
