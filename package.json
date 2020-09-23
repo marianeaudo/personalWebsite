@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "config": "ts-node config.index.ts",
+    "config2": "ts-node config2.index.ts",
     "ng": "ng",
     "start": "npm run config && ng serve -o",
     "build": "ng build",

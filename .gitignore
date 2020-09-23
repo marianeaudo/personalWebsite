@@ -17,6 +17,7 @@ dist/
 tmp/
 app/**/*.js
 app/**/*.js.map
+config2.index.ts
 
 # dependencies
 node_modules/
