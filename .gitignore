@@ -50,6 +50,3 @@ e2e/*.map
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
-
-# environment
-src/environments/environment.ts
