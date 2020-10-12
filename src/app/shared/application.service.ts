@@ -12,7 +12,7 @@ export class ApplicationService {
     { title: 'À propos', route: '/apropos', icon: 'sentiment_satisfied' },
     { title: 'Compétences', route: '/competences', icon: 'computer'},
     { title: 'Certifications', route: '/certifications', icon: 'history_edu'},
-    { title: 'Formation', route: '/formation', icon: 'school' },
+    { title: 'Formations', route: '/formation', icon: 'school' },
     { title: 'Expériences', route: '/experiences', icon: 'card_travel' },
     { title: 'Contact', route: '/contact', icon: 'contacts' },
   ];

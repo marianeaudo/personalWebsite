@@ -1,33 +1,44 @@
-a {
-  text-decoration: none;
-  color: black;
-}
+  a {
+    text-decoration: none;
+    color: #fafaff;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+  }
 
-a:hover, a:active {
-  color: white;
-}
+  a:hover, a:active {
+    color: rgb(168, 131, 109);
+  }
 
-.navigation-items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  .navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-mat-toolbar {
-  height: 10vh;
-}
+  .selected {
+    color: rgb(168, 131, 109);
+  }
 
-.selected {
-  color: white;
-}
+  .toggle:hover {
+    cursor: pointer;
+  }
 
-.toolbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100vw;
-}
+  a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease,background-color .5s ease, left .5s ease;
+  }
 
-.toggle:hover {
-  cursor: pointer;
-}
+  a:hover:after {
+    width: 100%;
+    left: 0;
+    background: rgb(168, 131, 109);
+  }
+

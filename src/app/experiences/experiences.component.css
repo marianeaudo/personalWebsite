@@ -34,7 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 93vh;
   width: 100vw;
 }
 
@@ -42,7 +42,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 90vh;
+  height: 93vh;
   align-items: center;
   width: 100vw;
 }

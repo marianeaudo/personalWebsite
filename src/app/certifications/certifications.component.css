@@ -20,6 +20,7 @@
     height: 90vh;
     justify-content: center;
     width: 100vw;
+    padding-top: 40px;
   }
 }
 
@@ -37,6 +38,7 @@
     height: 90vh;
     justify-content: center;
     width: 100vw;
+    padding-top: 40px;
   }
 
   .content {

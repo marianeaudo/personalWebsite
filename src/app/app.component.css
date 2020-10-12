@@ -1,18 +1,18 @@
-mat-sidenav-container, mat-sidenav-content, mat-sidenav {
-  height: 100%;
-  /* background-color: lightgrey; */
-}
-
 mat-sidenav-container {
   display: block;
   position: relative;
+  color: #fafaff;
+  height: 100vh;
+}
+
+mat-sidenav-content {
+  padding-top: 20px;
 }
 
 mat-sidenav-container::after {
   content: "";
-  background-image: url("../assets/pexels-negative-space-34153.jpg");
-  background-size: cover;
-  opacity: 0.3;
+  background-image: url("../assets/renzler-power-down.gif");
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
@@ -24,5 +24,4 @@ mat-sidenav-container::after {
 mat-sidenav {
   width: 200px;
 }
-
 

@@ -1,8 +1,6 @@
   <section class="contact-form" *ngIf="!messageSent">
+    <div class="message">Laissez-moi un message !</div>
     <mat-card class="card">
-      <mat-card-title class="title">
-        Envoyez-moi un message!
-      </mat-card-title>
       <mat-card-content>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit(); contactForm.reset()" fxLayout="column"
           fxLayoutAlign="center center" fxLayoutGap="10px">

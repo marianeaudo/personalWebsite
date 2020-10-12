@@ -1,16 +1,10 @@
-@media screen and (min-width: 2000px) {
-  .skills {
-    height: 90vh;
-  }
-}
-
 .skillsglobal {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 90vh;
   text-align: center;
+  padding-top: 15px;
   }
 
 .skills {

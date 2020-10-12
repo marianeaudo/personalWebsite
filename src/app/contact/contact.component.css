@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) and (max-width: 2000px) {
+@media screen and (min-width: 750px) and (max-width: 2000px) {
   mat-form-field {
     width: 600px;
   }
@@ -8,7 +8,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   mat-form-field {
     width: 300px;
   }
@@ -29,13 +29,16 @@
 }
 
 .contact-form {
-  height: 90vh;
+  height: 87vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 
-.title {
-  text-align: center;
-  padding-bottom: 5px;
+.message {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
