@@ -1,8 +1,8 @@
 .home {
   display: table;
   text-align: center;
-  height: 90vh;
-  width: 100vw;
+  height: 94vh;
+  width: 100%;
 }
 
 .global {
@@ -33,9 +33,9 @@ h3 {
 }
 
 .copyright {
-  position:absolute;
-  right:0;
-  bottom:0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 .linkedin {
