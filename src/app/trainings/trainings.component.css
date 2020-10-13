@@ -46,3 +46,7 @@
   height: 30%;
   padding-bottom: 10px;
 }
+
+.isLoading ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: rgb(168, 131, 109);
+}
