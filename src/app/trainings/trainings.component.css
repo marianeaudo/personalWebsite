@@ -1,7 +1,6 @@
 @media screen and (min-width: 500px) {
   .card {
     width: 400px;
-    margin: 10px;
     text-align: center;
   }
 
@@ -31,10 +30,10 @@
 .trainings {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   height: 93vh;
   align-items: center;
-  width: 100vw;
 }
 
 .title, .subtitle, .content {
