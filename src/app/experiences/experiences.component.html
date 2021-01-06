@@ -12,7 +12,8 @@
         </mat-card-title>
         <mat-card-subtitle class="subtitle">
           {{ experience.company }} - {{ experience.beginningDate.seconds * 1000 | date: 'MMMM yyyy' | titlecase}} -
-          {{ experience.duration }} mois
+          <span *ngIf="experience.duration > 0">{{ experience.duration }} mois</span>
+          <span *ngIf="experience.duration <= 0">En poste</span>
         </mat-card-subtitle>
         <img class="logo" [src]="experience.logo">
         <mat-card-content class="content">
